@@ -6,7 +6,7 @@ const EmpytyStage = () => {
 	return (
 		<div
 			role="status"
-			className="flex  items-center justify-center  h-44  w-48 bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700">
+			className="flex my-2  flex-wrap items-center justify-center  h-36 w-32  sm:h-44  sm:w-48 bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700">
 			<svg
 				className="w-9 h-9 text-gray-200 dark:text-gray-600"
 				aria-hidden="true"

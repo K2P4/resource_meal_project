@@ -13,14 +13,14 @@ import Error from "./components/Error";
 const App = () => {
 	return (
 		<div className="  ">
-      <Navbar/>
+			<Navbar />
 			<Routes>
 				<Route path="/" element={<Meal />} />
 
 				<Route path="/detail/:id" element={<Detail />} />
-				<Route path="Search/:name" element={<Search />} />
+				<Route path="/search/:name" element={<Search />} />
+				<Route path="*" element={<Error />} />
 			</Routes>
-			
 		</div>
 	);
 };

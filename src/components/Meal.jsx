@@ -20,6 +20,9 @@ const Meal = () => {
 			"https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
 		);
 		const { meals } = await meal.json();
+
+
+		
 		setTimeout(() => {
 			setFood(meals);
 			setLoading(false);
@@ -47,7 +50,7 @@ const Meal = () => {
 			)}
 
 			{loading && (
-				<div className="flex flex-wrap w-[70%]  gap-6 mx-auto justify-center">
+				<div className="flex flex-wrap  mt-2 gap-2  w-[90%]  md:w-[80%]  sm:w-[80%] md:gap-6  sm:gap-6 mx-auto justify-center">
 					{emptyData.map((index) => (
 						<EmpytyStage key={index} />
 					))}

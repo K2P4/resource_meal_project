@@ -12,9 +12,10 @@ const Navbar = () => {
 	const nav = useNavigate();
 
 	const Handler = () => {
-		nav("/Search/" + data);
+		nav(`search/${data}`);
+		
 	};
-	console.log(data);
+	
 
 	return (
 		<div className=" flex px-3 shadow py-2 sm:py-2 justify-between  sm:justify-around  mt-3">
