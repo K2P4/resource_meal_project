@@ -12,7 +12,7 @@ const MealCart = ({ images, name, id }) => {
 			<img
 				src={images}
 				alt=""
-				className=" group-hover:rotate-6 duration-150 transition-transform  w-[150px] object-cover rounded-lg meal-img"
+				className=" group-hover:rotate-6 duration-150 transition-transform  w-[150px] sm:w-[250px] object-cover rounded-lg meal-img"
 			/>
 
 			<Link to={`/detail/${id}`}>
