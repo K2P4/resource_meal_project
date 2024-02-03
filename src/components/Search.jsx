@@ -15,14 +15,11 @@ const Search = () => {
 	const fetchData = async () => {
 		const api = await fetch(
 			`https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`
-			
 		);
 		const { meals } = await api.json();
 		const mealData = meals.map((meal) => meal.strMeal);
-		
+
 		setItems(meals);
-		
-		
 	};
 
 	return (
