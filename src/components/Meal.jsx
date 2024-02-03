@@ -23,7 +23,7 @@ const Meal = () => {
 		setTimeout(() => {
 			setFood(meals);
 			setLoading(false);
-		}, 4000);
+		}, 1000);
 
 		console.log(meals);
 	};
@@ -31,7 +31,7 @@ const Meal = () => {
 	return (
 		<>
 			{!loading && (
-				<div className="flex flex-wrap gap-2 sm:gap-5 mt-3  sm:mt-4 duration-100 justify-center">
+				<div className="flex flex-wrap gap-2 sm:gap-5 mt-3  sm:mt-4 duration-75 justify-center">
 					{food.map((item) => {
 						return (
 							<MealCart
